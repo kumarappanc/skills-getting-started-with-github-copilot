@@ -84,7 +84,7 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
   padding: 8px 12px;
   background-color: #ffffff;
@@ -99,6 +99,33 @@ section h3 {
   font-size: 14px;
   margin-bottom: 6px;
   color: #444;
+}
+
+/* Participant item layout */
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.participant-email {
+  word-break: break-all;
+}
+
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.unregister-btn:hover {
+  color: #b71c1c;
+  background-color: rgba(198,40,40,0.06);
 }
 
 /* Fallback when there are no participants */
